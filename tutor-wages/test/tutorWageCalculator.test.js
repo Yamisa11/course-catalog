@@ -23,9 +23,10 @@ describe("The tutorWageCalculator function", function() {
     it("should be able to handle invalid timesheet string and return 0", function(){
 
         // invalid
+        console.log(tutorWageCalculator("4-8-5", 1));
         assert.equal(0, tutorWageCalculator("4-8-5", 1)) //
         // invalid
-        assert.equal(0, tutorWageCalculator("4-8-5-4-8-5-9-1", 1)) //
+       assert.equal(0, tutorWageCalculator("4-8-5-4-8-5-9-1", 1)) //
 
     });
 

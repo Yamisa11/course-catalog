@@ -3,6 +3,7 @@
 // first param (timeSheetStr) is string that shows hours worked per day separated by dash
 // second param is tutor level (level) Shows hourly rate
 // function must multiply sumOfHours with level and assign answer to wagesTotal
+// timesheets with less than 5 or more than 7 entries are invaid, return 0
 //return wagesTotal
 
 function tutorWageCalculator(timesheetStr,level) {
@@ -10,8 +11,8 @@ function tutorWageCalculator(timesheetStr,level) {
     var wagesSumTotal = 0;
     var timesheetArray = timesheetStr.split("-")
 
-    if (timesheetArray.length <5 || timesheetArray>7) {
-        var message = "invalid";
+    if (timesheetArray.length <5 || timesheetArray.length>7) {
+        wagesSumTotal = 0;
         
     }else{
         for (let i = 0; i < timesheetArray.length; i++) {
@@ -31,3 +32,4 @@ function tutorWageCalculator(timesheetStr,level) {
     return wagesSumTotal;
 
 }
+tutorWageCalculator("7-6-4",3)
