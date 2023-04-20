@@ -1,0 +1,22 @@
+.last{
+    width: 60em !important;
+
+    margin: auto !important ;
+    
+}
+h1{
+    text-align: center;
+    margin: 2em 0em;
+
+}
+.above{
+    word-wrap: break-word;
+    font-size: x-large;
+    text-align: center;
+}
+.row{
+    justify-content: space-between !important;}
+
+.card{
+    margin-bottom: 3em;
+}
