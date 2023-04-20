@@ -1,7 +1,8 @@
-btn = document.querySelectorAll("btn")
-para = document.querySelectorAll("more")
+btn = document.querySelectorAll(".btn")
+para = document.querySelectorAll(".more")
 
-btn.onmouseover = function () {
+btn.eventListener("click",  function () {
+    alert("Hi")
     para.style.display("inline")
-}
+})
 
