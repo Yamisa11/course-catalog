@@ -1,5 +1,5 @@
 .last{
-    width: 60em !important;
+    /* width: 60em !important; */
 
     margin: auto !important ;
     
@@ -19,4 +19,34 @@ h1{
 
 .card{
     margin-bottom: 3em;
+}
+.more{
+    display: none;
+}
+.display{
+display: block;
+}
+
+@media screen and (max-width:800px){
+    .last{
+        width: 50% !important;
+    }
+    .card{
+        margin: auto;
+        padding: auto;
+        width: 70%!important;
+        
+    }
+    .row{
+        justify-content: space-around;
+    }
+    .above{
+        font-size: medium;
+        width: 90% !important;
+    }
+}
+@media screen and (min-width:"800px") {
+    .last{
+        width: 30% !important;
+    }
 }
