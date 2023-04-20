@@ -32,6 +32,9 @@ footer{
     margin-top: 3em !important;
     
 }
+footer a{
+    margin-left: 12% !important;
+}
 
 
 @media screen and (max-width:800px){
